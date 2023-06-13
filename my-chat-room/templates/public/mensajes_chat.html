@@ -1,0 +1,21 @@
+{% if lista_mensajes[0]|length %}
+<ul class="chat__list-messages">
+  {% for mensajes in lista_mensajes %}
+  <!---->
+  {% if loop.index % 2 == 0 %}
+  <li>
+    <div class="chat__time">{{ mensajes.fecha_formateada}}</div>
+    <div class="chat__bubble chat__bubble--you">{{ mensajes.mensaje}}</div>
+  </li>
+  {% else %}
+  <li>
+    <div class="chat__time" style="align-self: end">
+      {{ mensajes.fecha_formateada}}
+    </div>
+    <div class="chat__bubble chat__bubble--me">{{ mensajes.mensaje}}</div>
+  </li>
+  {% endif %} {% endfor %}
+</ul>
+{% else %}
+<p style="text-align: center">No hay mensajes 😭</p>
+{% endif %}

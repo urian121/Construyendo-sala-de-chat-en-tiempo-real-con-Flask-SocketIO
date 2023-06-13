@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat con Flask SocketIO 😀 - Urian Viera</title>
+    {% include 'public/includes/links_css.html' %}
+  </head>
+  <body>
+    {% include 'public/includes/loader.html' %}
+
+    <div class="home-page__content messages-page">
+      <div class="container-fluid h-100">
+        <div class="row px-0 h-100">
+          <div class="chat col-12 col-md-8 col-lg-7 col-xl-6 px-0 pl-md-1">
+            <div class="chat__container">
+              <div class="chat__wrapper py-2 pt-mb-2 pb-md-3">
+                {% include 'public/includes/perfil.html' %}
+                <div class="chat__content pt-4 px-3">
+                  {% include 'public/mensajes_chat.html' %}
+                </div>
+                <span class="contentChat"></span>
+
+                {% include 'public/includes/form_chat.html' %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'public/includes/links_js.html' %}
+  </body>
+</html>
