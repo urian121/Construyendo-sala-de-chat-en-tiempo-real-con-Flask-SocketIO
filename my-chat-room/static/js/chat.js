@@ -32,6 +32,10 @@ if (form_chat) {
       return; // Detener el envío del formulario
     }
 
+    // Reproducir el archivo de audio después de recibir una respuesta exitosa
+    const audio = new Audio("../static/audio/audio_chat.mp3");
+    audio.play();
+
     //limpio el border del input mensaje
     mensajeInput.style.border = "";
     //console.log(`Mensaje ${mensajeInput.value}`);
