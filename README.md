@@ -45,4 +45,12 @@ https://flask-socketio.readthedocs.io/en/latest/index.html
 
 ![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/portada_flask_socketio_urian_viera.PNG)
 
-# ¡Por favor, no olvides dejar tu comentario y darle like al canal! 👍 Además, si aún no lo has hecho, ¡te invito a suscribirte! 😀
+
+### Expresiones de Gratitud 🎁
+
+    Comenta a otros sobre este proyecto 📢
+    Invita una cerveza 🍺 o un café ☕
+    Paypal iamdeveloper86@gmail.com
+    Da las gracias públicamente 🤓.
+
+## No olvides SUSCRIBIRTE 👍
