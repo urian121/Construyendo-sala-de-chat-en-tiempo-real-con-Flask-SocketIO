@@ -1,56 +1,51 @@
-## Construyendo una sala de chat en tiempo real con Flask y SocketIO 🐍
+# Chat en Tiempo Real con Flask + SocketIO ⚡🐍
 
-###### Construye una sala de chat en tiempo real utilizando Flask y SocketIO. Esta poderosa combinación te permite crear una aplicación web interactiva con capacidades de chat en tiempo real. Flask te proporciona un marco web sólido y SocketIO facilita la comunicación bidireccional entre el servidor y el cliente para una experiencia de chat fluida
-
-##### Paquetes necesarios
-
-`pip install flask`
-`pip install mysql-connector-python`
-`pip install flask-socketio`
-
-##### Generar archivo requirement.txt
-
-`pip freeze > requirements.txt`
-
-##### Instalar todos los paquetes del proyecto
-
-`pip install -r requirements.txt`
-
-#### Flask-Sockets es una extensión de Flask que proporciona una integración directa con el paquete WebSocket de Python, lo que te permite utilizar WebSocket en tu aplicación Flask. Puedes instalarlo utilizando pip: pip install Flask-Sockets.
-
-### Nota
-
-Puedes crear un entorno virtual con `virtualenv env` e instalar todos los paquetes del proyecto ejecutando ``pip install -r requirements.txt`
-obvio cambiar los parametros para la conexión a BD e importar la tabla que se requiere para almacenar los mensajes de la sala de chat.
-
-##### broadcast=True
-
-Se utiliza al emitir un evento desde el servidor para especificar
-que dicho evento debe ser transmitido a todos los clientes conectados,
-excepto al cliente que generó el evento.
-
-##### json.dumps()
-
-Para convertir la lista de diccionarios en una cadena JSON
-data_msj = json.dumps(respuesta_procesar_form) # Convertir a JSON
-print(data_msj)
-
-##### Documentación
-
-https://flask-socketio.readthedocs.io/en/latest/index.html
-
-### Resultado Final
+Sala de chat en tiempo real usando **Flask** y **SocketIO**, con comunicación bidireccional entre cliente y servidor.
 
 ![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/portada_flask-socketio__chat_urian_viera.PNG)
-
 ![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/portada_flask_socketio_urian_viera.PNG)
 
+## Instalación
 
-### Expresiones de Gratitud 🎁
+### Paquetes necesarios
 
-    Comenta a otros sobre este proyecto 📢
-    Invita una cerveza 🍺 o un café ☕
-    Paypal iamdeveloper86@gmail.com
-    Da las gracias públicamente 🤓.
+```bash
+pip install flask flask-socketio mysql-connector-python
+```
 
-## No olvides SUSCRIBIRTE 👍
+### Generar `requirements.txt`
+
+```bash
+pip freeze > requirements.txt
+```
+
+### Instalar dependencias del proyecto
+
+```bash
+pip install -r requirements.txt
+```
+
+### Entorno virtual (opcional)
+
+```bash
+virtualenv env
+source env/bin/activate   # En Windows: env\Scripts\activate
+```
+
+## Notas importantes
+
+* Configura los parámetros de conexión a tu base de datos.
+* Importa la tabla donde se guardarán los mensajes.
+* `broadcast=True`: envía el mensaje a todos los clientes excepto al emisor.
+* `json.dumps()`: convierte listas/diccionarios a JSON para enviarlos al cliente.
+
+## Documentación
+[https://flask-socketio.readthedocs.io/en/latest/index.html](https://flask-socketio.readthedocs.io/en/latest/index.html)
+
+
+## Apoya el proyecto ❤️
+
+* Recomiéndalo 📢
+* Invita una cerveza 🍺 o un café ☕
+* PayPal: **[iamdeveloper86@gmail.com](mailto:iamdeveloper86@gmail.com)**
+* ¡Suscríbete! 👍
